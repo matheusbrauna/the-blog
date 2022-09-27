@@ -4,7 +4,9 @@ import { Container, Navigation } from './styles'
 export function Header() {
   return (
     <Container>
-      <img src="/logo.svg" alt="Logo The blog" />
+      <NavLink to="/">
+        <img src="/logo.svg" alt="Logo The blog" />
+      </NavLink>
 
       <nav>
         <Navigation>
