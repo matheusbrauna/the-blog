@@ -13,11 +13,13 @@ export const Navigation = styled.ul`
   gap: 2rem;
 
   li {
-    a {
-      font-size: 1.125rem;
-      font-weight: 700;
+    font-size: 1.125rem;
+    font-weight: 700;
 
-      &.active {
+    a {
+      transition: color 0.2s;
+
+      &:hover {
         color: ${({ theme }) => theme.colors.green};
       }
     }
