@@ -23,6 +23,12 @@ export const PostsContainer = styled(NavLink)`
     color: ${({ theme }) => theme.colors['brand-mid']};
     margin: 0.5rem 0;
   }
+
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 export const PostContainer = styled.article`

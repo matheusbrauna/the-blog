@@ -31,6 +31,14 @@ export const TextGroupContainer = styled.div`
 
     svg {
       color: ${({ theme }) => theme.colors.green};
+      transform: translateX(0);
+      transition: transform 0.1s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(8px);
+      }
     }
   }
 `
