@@ -9,17 +9,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.colors['brand-dark']};
-    color: ${({ theme }) => theme.colors['brand-light']};
+    background-color: ${({ theme }) => theme.colors.purple2};
   }
 
   body, input, textarea, button {
     font-family: ${({ theme }) => theme.fonts.regular};
+    color: ${({ theme }) => theme.colors.mauve11};
     font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: ${({ theme }) => theme.fonts.title};
+    color: ${({ theme }) => theme.colors.mauve12};
     font-weight: 700;
   }
 

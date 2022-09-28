@@ -12,6 +12,8 @@ export const Container = styled.main`
 
 export const PostsContainer = styled(NavLink)`
   max-width: 370px;
+  border-radius: 6px;
+  overflow: hidden;
 
   span {
     display: inline-block;
@@ -20,7 +22,6 @@ export const PostsContainer = styled(NavLink)`
 
   h2 {
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors['brand-mid']};
     margin: 0.5rem 0;
   }
 
@@ -42,12 +43,23 @@ export const PostContainer = styled.article`
 
   h2 {
     font-size: 3rem;
-    color: ${({ theme }) => theme.colors['brand-mid']};
     margin-top: 0.5rem;
   }
 
-  p {
+  pre {
     font-size: 1.125rem;
+    line-height: 1.6;
+    color: ${({ theme }) => theme.colors.mauve12};
+    font-family: 'Roboto';
     margin-top: 2rem;
+    white-space: pre-wrap;
   }
+`
+
+export const ImageContainer = styled.div`
+  flex: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 `

@@ -1,18 +1,22 @@
 import { useParams } from 'react-router-dom'
+import { Loading } from '../../../components/Loading'
+import { useGetPostQuery } from '../../../graphql/generated'
 import { PostContainer } from '../styles'
 
 export function Post() {
-  const { id } = useParams()
+  const { slug } = useParams<{ slug: string }>()
+
+  const { data } = useGetPostQuery({
+    variables: {
+      slug,
+    },
+  })
 
   return (
     <PostContainer>
-      <h2>10 dicas para conseguir a vaga desejada</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in
-        aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed
-        tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat
-        aenean sit vitae, sed tristique. Sed volutpat aenean.
-      </p>
+      {!data && <Loading />}
+      <h2>{data?.post?.title}</h2>
+      <pre>{data?.post?.content}</pre>
     </PostContainer>
   )
 }

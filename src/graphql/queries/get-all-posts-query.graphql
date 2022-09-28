@@ -1,0 +1,13 @@
+query GetPosts {
+  posts(orderBy: publishedAt_DESC) {
+    content
+    createdAt
+    id
+    slug
+    subtitle
+    title
+    banner {
+      url
+    }
+  }
+}

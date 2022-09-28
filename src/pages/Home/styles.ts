@@ -4,7 +4,7 @@ export const Container = styled.main`
   flex: 1;
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
 `
 
@@ -13,13 +13,17 @@ export const TextGroupContainer = styled.div`
 
   h1 {
     font-size: 2.25rem;
-    color: ${({ theme }) => theme.colors['brand-mid']};
   }
 
   p {
     font-size: 1.125rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    white-space: nowrap;
+    max-width: 480px;
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+
+    text-overflow: ellipsis;
   }
 
   a {
@@ -27,7 +31,6 @@ export const TextGroupContainer = styled.div`
     align-items: center;
     font-size: 18px;
     gap: 0.5rem;
-    color: ${({ theme }) => theme.colors['brand-mid']};
 
     svg {
       color: ${({ theme }) => theme.colors.green};
@@ -45,4 +48,9 @@ export const TextGroupContainer = styled.div`
 
 export const ImageContainer = styled.div`
   flex: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0px 0px 8px 4px rgba(121, 56, 178, 0.5);
 `

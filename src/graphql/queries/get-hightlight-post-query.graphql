@@ -1,0 +1,13 @@
+query GetHighlightPost {
+  posts(first: 1) {
+    content
+    createdAt
+    id
+    slug
+    subtitle
+    title
+    banner {
+      url
+    }
+  }
+}

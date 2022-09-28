@@ -9,6 +9,5 @@ export const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
+  gap: 6rem;
 `
