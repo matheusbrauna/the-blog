@@ -6,6 +6,10 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 5rem;
+
+  h1 {
+    color: ${({ theme }) => theme.colors.purple12};
+  }
 `
 
 export const Navigation = styled.ul`
@@ -20,7 +24,7 @@ export const Navigation = styled.ul`
       transition: color 0.2s;
 
       &:hover {
-        color: ${({ theme }) => theme.colors.green};
+        color: ${({ theme }) => theme.colors.green11};
       }
     }
   }

@@ -33,7 +33,7 @@ export const TextGroupContainer = styled.div`
     gap: 0.5rem;
 
     svg {
-      color: ${({ theme }) => theme.colors.green};
+      color: ${({ theme }) => theme.colors.green11};
       transform: translateX(0);
       transition: transform 0.1s;
     }

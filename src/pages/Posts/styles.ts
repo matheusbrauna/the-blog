@@ -37,13 +37,13 @@ export const PostContainer = styled.article`
 
   span {
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-align: right;
   }
 
   h2 {
     font-size: 3rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
 
   pre {
@@ -57,6 +57,7 @@ export const PostContainer = styled.article`
 `
 
 export const ImageContainer = styled.div`
+  margin-top: 1.5rem;
   flex: 1;
   border-radius: 6px;
   overflow: hidden;

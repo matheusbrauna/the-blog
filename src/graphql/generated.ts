@@ -4333,7 +4333,7 @@ export type GetPostQueryVariables = Exact<{
 }>;
 
 
-export type GetPostQuery = { __typename?: 'Query', post?: { __typename?: 'Post', title: string, subtitle?: string | null, content: string, createdAt: any, author?: { __typename?: 'Author', name: string, avatarUrl: string } | null } | null };
+export type GetPostQuery = { __typename?: 'Query', post?: { __typename?: 'Post', title: string, subtitle?: string | null, content: string, createdAt: any, banner?: { __typename?: 'Asset', url: string } | null, author?: { __typename?: 'Author', name: string } | null } | null };
 
 
 export const GetPostsDocument = gql`
@@ -4427,9 +4427,11 @@ export const GetPostDocument = gql`
     subtitle
     content
     createdAt
+    banner {
+      url
+    }
     author {
       name
-      avatarUrl
     }
   }
 }

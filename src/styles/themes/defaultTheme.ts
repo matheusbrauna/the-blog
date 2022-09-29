@@ -1,4 +1,4 @@
-import { purpleDark, mauveDark } from '@radix-ui/colors'
+import { purpleDark, mauveDark, greenDark } from '@radix-ui/colors'
 
 export const defaultTheme = {
   colors: {
@@ -6,7 +6,7 @@ export const defaultTheme = {
     ...mauveDark,
 
     white: '#fff',
-    green: '#4fff4b',
+    ...greenDark,
   },
 
   fonts: {

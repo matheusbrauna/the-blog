@@ -2,6 +2,7 @@ import { Container, ImageContainer, TextGroupContainer } from './styles'
 import { FiArrowRight } from 'react-icons/fi'
 import { useGetHighlightPostQuery } from '../../graphql/generated'
 import { Loading } from '../../components/Loading'
+import { NavLink } from 'react-router-dom'
 
 export function Home() {
   const { data } = useGetHighlightPostQuery()
@@ -16,9 +17,9 @@ export function Home() {
 
             <p>{post.content}</p>
 
-            <a href="/posts">
+            <NavLink to="/posts">
               Veja mais <FiArrowRight size={24} />
-            </a>
+            </NavLink>
           </TextGroupContainer>
 
           <ImageContainer>

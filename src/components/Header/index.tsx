@@ -5,7 +5,7 @@ export function Header() {
   return (
     <Container>
       <NavLink to="/">
-        <img src="/logo.svg" alt="Logo The blog" />
+        <h1>The Blog</h1>
       </NavLink>
 
       <nav>

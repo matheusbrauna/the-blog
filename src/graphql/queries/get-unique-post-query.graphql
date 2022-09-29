@@ -4,9 +4,11 @@ query GetPost($slug: String) {
     subtitle
     content
     createdAt
+    banner {
+      url
+    }
     author {
       name
-      avatarUrl
     }
   }
 }
