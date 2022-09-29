@@ -36,19 +36,19 @@
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/91563670/193050994-ec8e4d89-b5ce-49b5-8e4b-6ae4dfa58953.gif)
 <br>
 
-### [Ver Online](https://the-blog-t4ki.vercel.app)
+### <a href="https://the-blog-t4ki.vercel.app" target="_blank">Ver Online</a>
 
 ## Tecnologias
 
-- [React](https://pt-br.reactjs.org)
-- [Vite](https://vitejs.dev)
-- [react-router-dom](https://reactrouter.com/en/main)
-- [styles-components](https://styled-components.com)
-- [react-icons](https://react-icons.github.io/react-icons)
-- [Hygraph](https://hygraph.com)
-- [Graphql](https://graphql.org)
-- [Codegen](https://www.the-guild.dev/graphql/codegen)
-- [Apollo Client](https://www.apollographql.com/docs/react)
+- <a href="https://pt-br.reactjs.org" target="_blank">React</a>
+- <a href="https://vitejs.dev" target="_blank">Vite</a>
+- <a href="https://reactrouter.com/en/main" target="_blank">react-router-dom</a>
+- <a href="https://styled-components.com" target="_blank">styles-components</a>
+- <a href="https://react-icons.github.io/react-icons" target="_blank">react-icons</a>
+- <a href="https://hygraph.com" target="_blank">Hygraph</a>
+- <a href="https://hygraph.com" target="_blank">Graphql</a>
+- <a href="https://www.the-guild.dev/graphql/codegen" target="_blank">Codegen</a>
+- <a href="https://www.apollographql.com/docs/react" target="_blank">Apollo Client</a>
 
 ---
 
