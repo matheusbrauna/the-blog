@@ -8,6 +8,10 @@ export const Container = styled.main`
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   row-gap: 4rem;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 `
 
 export const PostsContainer = styled(NavLink)`
@@ -53,6 +57,16 @@ export const PostContainer = styled.article`
     font-family: 'Roboto';
     margin-top: 2rem;
     white-space: pre-wrap;
+  }
+
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    pre {
+      font-size: 1rem;
+    }
   }
 `
 

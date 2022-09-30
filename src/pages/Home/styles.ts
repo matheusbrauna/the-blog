@@ -6,6 +6,10 @@ export const Container = styled.main`
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 `
 
 export const TextGroupContainer = styled.div`
@@ -44,6 +48,12 @@ export const TextGroupContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    p {
+      max-width: 90vw;
+    }
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -53,4 +63,8 @@ export const ImageContainer = styled.div`
   object-fit: cover;
   object-position: center;
   box-shadow: 0px 0px 8px 4px rgba(121, 56, 178, 0.5);
+
+  @media (max-width: 1024px) {
+    margin-top: 1.5rem;
+  }
 `
