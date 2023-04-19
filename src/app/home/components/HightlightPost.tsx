@@ -1,6 +1,7 @@
 import { Avatar } from '@/components/client/Avatar'
 import { ArrowLeft, ArrowRight, Star } from '@phosphor-icons/react'
 import { KeenSliderHooks, KeenSliderInstance } from 'keen-slider'
+import Link from 'next/link'
 import { MutableRefObject } from 'react'
 
 interface HighlightPostProps {
@@ -11,15 +12,17 @@ interface HighlightPostProps {
     {},
     KeenSliderHooks
   > | null>
+  slug: string
 }
 
 export function HighlightPost({
   loaded,
   currentSlide,
   instanceRef,
+  slug,
 }: HighlightPostProps) {
   return (
-    <article className="p-10 keen-slider__slide">
+    <Link href={slug} className="p-10 keen-slider__slide">
       <div className="flex flex-col h-full gap-2">
         <div className="flex justify-between">
           <div className="flex flex-col gap-5">
@@ -76,6 +79,6 @@ export function HighlightPost({
           </div>
         </div>
       </div>
-    </article>
+    </Link>
   )
 }

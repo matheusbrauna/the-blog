@@ -6,11 +6,11 @@ export function Posts() {
     <section className="pt-16 pb-10">
       <div className="container grid grid-cols-3 gap-10">
         <HighlightsPosts />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        <Post slug="post-1" />
+        <Post slug="post-2" />
+        <Post slug="post-3" />
+        <Post slug="post-4" />
+        <Post slug="post-5" />
       </div>
     </section>
   )

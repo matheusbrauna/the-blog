@@ -9,16 +9,16 @@ export function Header() {
           <Link href="/" className="text-2xl font-bold">
             The <span className="text-rose-500">Blog.</span>
           </Link>
-          <Link href="/back-end" className="text-lg text-gray-200">
+          <Link href="/tag/back-end" className="text-lg text-gray-200">
             Back-End
           </Link>
-          <Link href="/front-end" className="text-lg text-gray-200">
+          <Link href="/tag/front-end" className="text-lg text-gray-200">
             Front-End
           </Link>
-          <Link href="/mobile" className="text-lg text-gray-200">
+          <Link href="/tag/mobile" className="text-lg text-gray-200">
             Mobile
           </Link>
-          <Link href="/carreira" className="text-lg text-gray-200">
+          <Link href="/tag/carreira" className="text-lg text-gray-200">
             Carreira
           </Link>
         </nav>

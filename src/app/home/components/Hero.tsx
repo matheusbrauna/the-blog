@@ -8,7 +8,7 @@ export function Hero() {
           Transforme sua carreira em uma jornada de evolução contínua através
           das melhores tecnologias.
         </p>
-        <button className="px-6 py-3 font-semibold rounded-md bg-zinc-100 text-zinc-800">
+        <button className="px-6 py-3 font-semibold transition-transform rounded-md hover:-translate-y-1 bg-zinc-100 text-zinc-800">
           Inscreva-se em nossa newsletter
         </button>
       </div>

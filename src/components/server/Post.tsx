@@ -1,8 +1,12 @@
+import Link from 'next/link'
 import { Avatar } from '../client/Avatar'
 
-export function Post() {
+export function Post({ slug }: { slug: String }) {
   return (
-    <article className="flex flex-col transition-transform cursor-pointer overflow-hidden max-w-sm h-[420px] rounded-lg shadow-postShadow hover:-translate-y-1">
+    <Link
+      href={`/${slug}`}
+      className="flex flex-col transition-transform cursor-pointer overflow-hidden max-w-sm h-[420px] rounded-lg shadow-postShadow hover:-translate-y-1"
+    >
       <div className="h-56 p-6 bg-[url('../assets/post-banner.png')] bg-no-repeat bg-cover bg-center">
         <Avatar
           authorName="Matheus Braúna"
@@ -20,6 +24,6 @@ export function Post() {
           <span>3 min de leitura</span>
         </div>
       </div>
-    </article>
+    </Link>
   )
 }

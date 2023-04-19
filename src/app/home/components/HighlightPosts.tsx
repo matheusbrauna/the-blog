@@ -28,11 +28,13 @@ export function HighlightsPosts() {
           loaded={loaded}
           currentSlide={currentSlide}
           instanceRef={instanceRef}
+          slug="/post-1"
         />
         <HighlightPost
           loaded={loaded}
           currentSlide={currentSlide}
           instanceRef={instanceRef}
+          slug="/post-2"
         />
       </div>
     </>
