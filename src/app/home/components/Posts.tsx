@@ -1,5 +1,5 @@
+import { Post } from '@/components/server/Post'
 import { HighlightsPosts } from './HighlightPosts'
-import { Post } from './Post'
 
 export function Posts() {
   return (

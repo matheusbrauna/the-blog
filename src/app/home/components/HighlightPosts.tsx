@@ -22,7 +22,7 @@ export function HighlightsPosts() {
     <>
       <div
         ref={sliderRef}
-        className="col-span-2 keen-slider shadow-postShadow bg-[url('../assets/post-banner.png')] bg-cover bg-center bg-no-repeat overflow-hidden rounded-lg"
+        className="hover:-translate-y-1 transition-transform cursor-pointer col-span-2 keen-slider shadow-postShadow bg-[url('../assets/post-banner.png')] bg-cover bg-center bg-no-repeat overflow-hidden rounded-lg"
       >
         <HighlightPost
           loaded={loaded}

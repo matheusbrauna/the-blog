@@ -1,15 +1,5 @@
-import { Header } from '@/components/server/Header'
-import { Hero } from '@/components/server/Hero'
-import { Posts } from '@/components/server/Posts'
+import { Home } from './home'
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <Posts />
-      </main>
-    </>
-  )
+export default function HomePage() {
+  return <Home />
 }

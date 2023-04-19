@@ -8,14 +8,12 @@
   }
 }
 
-@layer components {
-  .post-component {
-    @apply overflow-hidden max-w-sm h-[420px] rounded-lg shadow-postShadow;
-  }
+.home-height {
+  height: calc(100vh - 8rem);
 }
 
-.header-height {
-  height: calc(100vh - 8rem);
+.category-height {
+  height: calc(100vh - 18rem);
 }
 
 .swiper-wrapper {

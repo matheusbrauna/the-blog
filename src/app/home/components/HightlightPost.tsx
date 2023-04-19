@@ -1,5 +1,5 @@
+import { Avatar } from '@/components/client/Avatar'
 import { ArrowLeft, ArrowRight, Star } from '@phosphor-icons/react'
-import { Avatar } from '../client/Avatar'
 import { KeenSliderHooks, KeenSliderInstance } from 'keen-slider'
 import { MutableRefObject } from 'react'
 
