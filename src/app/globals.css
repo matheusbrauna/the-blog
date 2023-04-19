@@ -10,10 +10,14 @@
 
 @layer components {
   .post-component {
-    @apply max-w-sm bg-zinc-900 h-[420px] p-6 rounded-lg relative before:content-[''] before:absolute before:top-2 before:right-2 before:left-2 before:bottom-0 before:-z-10 before:rounded-lg before:shadow-postShadow;
+    @apply overflow-hidden max-w-sm h-[420px] rounded-lg shadow-postShadow;
   }
 }
 
 .header-height {
   height: calc(100vh - 8rem);
+}
+
+.swiper-wrapper {
+  height: 100%;
 }
