@@ -5,7 +5,8 @@ export default function Category({ params }: { params: { category: string } }) {
   return (
     <main>
       <Hero category={params.category} />
-      <Posts />
+      {/* @ts-expect-error Async Server Component */}
+      <Posts category={params.category} />
     </main>
   )
 }
