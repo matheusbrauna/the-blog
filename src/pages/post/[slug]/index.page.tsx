@@ -21,7 +21,7 @@ export default function PostPage({ slug }: { slug: string }) {
       <div className="relative h-[450px] bg-gray-800">
         <BlurImage src={data.post?.banner?.url!} alt="Banner do post" />
       </div>
-      <div className="container py-6 prose-sm sm:prose-base prose-invert prose-headings:font-bold prose-pre:text-xs prose-code:whitespace-break-spaces">
+      <div className="container py-6 prose-sm sm:prose-base prose-invert prose-headings:font-bold prose-pre:text-xs prose-code:whitespace-break-spaces prose-code:bg-gray-700 prose-code:inline-block prose-code:p-2">
         <h1 className="mt-10">{data?.post?.title!}</h1>
         <article
           dangerouslySetInnerHTML={{ __html: data?.post?.content?.html! }}
