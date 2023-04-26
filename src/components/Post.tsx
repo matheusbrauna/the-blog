@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { Avatar } from './Avatar'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
-import Image from 'next/image'
 import { IPost } from '@/generated/graphql'
+import { BlurImage } from './BlurImage'
 dayjs.extend(relativeTime)
 
 export function Post({ post }: { post: IPost }) {
@@ -12,15 +12,10 @@ export function Post({ post }: { post: IPost }) {
   return (
     <Link
       href={`/post/${slug}`}
-      className="flex flex-col transition-transform cursor-pointer overflow-hidden max-w-sm h-[420px] rounded-lg shadow-postShadow hover:-translate-y-1"
+      className="flex flex-col transition-transform cursor-pointer overflow-hidden w-full sm:max-w-sm h-[420px] rounded-lg shadow-postShadow hover:-translate-y-1"
     >
       <div className="relative w-full h-56 p-6">
-        <Image
-          src={banner?.url!}
-          alt="Banner do post"
-          fill
-          className="absolute top-0 left-0 object-cover object-center -z-10"
-        />
+        <BlurImage src={banner?.url!} alt="Banner do post" />
         <Avatar
           authorName={author?.name!}
           profileImageURL={author?.avatarImage?.url!}

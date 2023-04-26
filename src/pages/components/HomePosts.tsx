@@ -11,7 +11,7 @@ export function HomePosts({
 }) {
   return (
     <section className="pt-16 pb-10">
-      <div className="container grid grid-cols-3 gap-10">
+      <div className="container flex flex-col items-center gap-10 sm:grid sm:grid-cols-2 lg:grid-cols-3">
         <HighlightPost highlightPost={highlightPost} />
         {posts.map((post) => (
           <Post key={post.id} post={post} />

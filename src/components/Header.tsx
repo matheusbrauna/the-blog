@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { SunIcon } from './ThemeSwitcher/SunIcon'
+import { NavMobile } from './NavMobile'
 
 export function Header() {
   return (
     <header className="shadow-xl">
       <div className="container flex items-center justify-between">
-        <nav className="flex items-center h-16 gap-8">
+        <nav className="items-center hidden h-16 gap-8 lg:flex">
           <Link href="/" className="text-2xl font-bold">
             The <span className="text-rose-500">Blog.</span>
           </Link>
@@ -22,9 +22,9 @@ export function Header() {
             Carreira
           </Link>
         </nav>
-        <button className="flex items-center justify-center rounded-full bg-gray-950 w-7 h-7">
-          <SunIcon weight="fill" height={16} width={16} />
-        </button>
+        <div className="w-full lg:hidden">
+          <NavMobile />
+        </div>
       </div>
     </header>
   )

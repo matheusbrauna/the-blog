@@ -12,7 +12,7 @@ export function HighlightPost({ highlightPost }: { highlightPost: IPost }) {
   return (
     <Link
       href={`/post/${slug}`}
-      className="relative block h-full col-span-2 p-10 overflow-hidden transition-transform rounded-lg hover:-translate-y-1 shadow-postShadow"
+      className="relative block w-full h-full p-10 overflow-hidden transition-transform rounded-lg sm:col-span-2 hover:-translate-y-1 shadow-postShadow"
     >
       <Image
         src={banner?.url!}
