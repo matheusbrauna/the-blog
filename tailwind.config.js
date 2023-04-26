@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/app/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
@@ -31,7 +28,10 @@ module.exports = {
       boxShadow: {
         postShadow: '0 4px 5px 5px rgba(0,0,0,0.1),0 0 0 transparent',
       },
+      fontFamily: {
+        sans: ['Source Sans Pro, sans-serif'],
+      },
     },
-    plugins: [],
   },
+  plugins: [require('@tailwindcss/typography'), require('tailwind-scrollbar')],
 }

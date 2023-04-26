@@ -1,0 +1,20 @@
+query GetPostsByCategory($title_contains: String) {
+  posts(where: {category: { title_contains: $title_contains }}) {
+    id
+    slug
+    title
+    createdAt
+    category {
+      title
+    }
+    banner {
+      url
+    }
+    author {
+      name
+      avatarImage {
+        url
+      }
+    }
+  }
+}

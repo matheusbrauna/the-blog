@@ -1,0 +1,23 @@
+query GetPostBySlug($slug: String) {
+  post(where: {slug: $slug}) {
+    id
+    slug
+    title
+    createdAt
+    content {
+      html
+    }
+    category {
+      title
+    }
+    banner {
+      url
+    }
+    author {
+      name
+      avatarImage {
+        url
+      }
+    }
+  }
+}
